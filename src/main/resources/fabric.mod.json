@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "npc_complete",
+	"version": "${version}",
+	"name": "npc_complete",
+	"description": "NPC Custom Mod",
+	"authors": [
+		"GENORD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/genord/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.genord.npc_complete.npc_complete"
+		],
+		"client": [
+			"net.genord.npc_complete.npc_completeClient"
+		],
+		"fabric-datagen": [
+			"net.genord.npc_complete.npc_completeDataGenerator"
+		]
+	},
+	"mixins": [
+		"genord.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
